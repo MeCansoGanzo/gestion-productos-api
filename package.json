@@ -1,13 +1,35 @@
 {
   "name": "gestion-productos-api",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "API RESTful para gestion de productos con Express, MongoDB, JWT y Jest",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js",
+    "test": "jest --runInBand --forceExit"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "nodejs",
+    "express",
+    "mongodb",
+    "jwt",
+    "jest"
+  ],
+  "author": "German Arnulfo Gastelum Gastelum",
   "license": "ISC",
-  "type": "commonjs"
+  "jest": {
+    "testEnvironment": "node",
+    "clearMocks": true
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.6",
+    "dotenv": "^17.3.1",
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.3.1"
+  },
+  "devDependencies": {
+    "jest": "^30.3.0",
+    "supertest": "^7.2.2"
+  }
 }
